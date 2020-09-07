@@ -33,7 +33,7 @@ if __name__ == "__main__":
 #         lay.addWidget(self.button)
 #
 #         self.serial = QtSerialPort.QSerialPort(
-#             'COM9',
+#             'COM17',
 #             baudRate=QtSerialPort.QSerialPort.Baud115200,
 #             readyRead=self.receive
 #         )

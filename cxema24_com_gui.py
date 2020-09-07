@@ -64,7 +64,7 @@ class MyWin(QtWidgets.QMainWindow):
         self.ser_port.clearError()
         self.ser_port.clear()
         for value in param.values():
-            byte_str = bytearray(f"{str(value)}\0".encode('utf-8'))
+            byte_str = bytearray(f"{str(value)}\n".encode('utf-8'))
             self.ser_port.write(byte_str)
         self.ser_port.flush()
 
