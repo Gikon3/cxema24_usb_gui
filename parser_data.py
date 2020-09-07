@@ -13,7 +13,7 @@ class ParserData:
             for cell in frame.split('.'):
                 msg_split.append(cell.split(':'))
             # print(msg_split)
-            g2 = int(msg_split.pop(0)[1]) + 1
+            g2 = int(msg_split.pop(0)[1])
 
             if g2 not in self.data_frame.keys():
                 self.data_frame[g2] = np.array(msg_split, dtype=int)
