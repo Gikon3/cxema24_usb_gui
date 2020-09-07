@@ -108,6 +108,7 @@ class MyWin(QtWidgets.QMainWindow):
                     mode = ""
                 prs_data.parse_msg(self.msg, mode)
                 prs_data.paint_window(mode)
+                self.msg = []
                 break
             self.msg.append(data_frame)
             print(data_frame)
